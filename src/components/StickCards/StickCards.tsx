@@ -1,7 +1,11 @@
 import { Card } from '../Card/Card';
 import styles from './StickCards.module.scss';
 
-export const StickCards = () => {
+// type CardProps = {
+//     item: object
+// }
+
+export const StickCards = ({}) => {
     return (
         <div className={styles.cards}>
             <li className={styles.cards__item}>

@@ -1,0 +1,27 @@
+.skill {
+    margin-top: 15px;
+    &__title {
+        h4 {
+            color: white;
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+    &__box {
+        span {
+            display: inline-block;
+            margin-top: 7px;
+            margin-right: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 3px 8px;
+            background-color: #2E2E2E;
+            border: 1px solid #717171;
+            border-radius: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
