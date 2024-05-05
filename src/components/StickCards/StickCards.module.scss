@@ -1,0 +1,29 @@
+.cards {
+    margin-left: 12px;
+    padding: 10px 24px;
+    position: relative;
+    &::before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &__item {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::before {
+            content: '';
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: -4px;
+        }
+    }
+}

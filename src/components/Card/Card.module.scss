@@ -1,0 +1,27 @@
+@import '../../scss/vars';
+
+.card {
+    &__date {
+        margin-bottom: 15px;
+        span {
+            color: $red;
+            font-size: 15px;
+            font-weight: medium;
+        }
+    }
+    &__title {
+        margin-bottom: 13px;
+        h3 {
+            font-size: 22px;
+            font-weight: 500;
+            color: $yellow;
+        }
+    }
+    &__info {
+        p {
+            color: white;
+            font-size: 19px;
+            font-weight: medium;
+        }
+    }
+}

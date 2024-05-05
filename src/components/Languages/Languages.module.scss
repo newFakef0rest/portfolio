@@ -1,0 +1,17 @@
+@import '../../scss/vars';
+
+.languages {
+    padding-bottom: 70px;
+    &__box {
+        padding-top: 16px;
+        li {
+            margin-top: 15px;
+        }
+        span {
+            color: $yellow;
+        }
+        p {
+            color: white;
+        }
+    }
+}
