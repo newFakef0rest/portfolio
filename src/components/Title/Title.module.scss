@@ -1,0 +1,13 @@
+.title {
+    text-transform: capitalize;
+    font-weight: semi-bold;
+    color: white;
+    font-size: 33px;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 8px;
+        width: 28px;
+        height: 28px;
+    }
+}
