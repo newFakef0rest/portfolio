@@ -13,7 +13,7 @@ function App() {
 
 
   useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       const t1 = gsap.timeline()
       t1.from('#test', {
         opacity: 0,
@@ -34,8 +34,13 @@ function App() {
         delay: 1,
         xPercent: "-100",
         duration: 2
-      }).from(['.video','#intro-logo', '#intro-title', '#intro-info', '#intro-buttons', '.anim__buttons'], {
+      }).from(['.video', '.anim__buttons'], {
         opacity: 0,
+        y: "-=20",
+        stagger: 1
+      }).from(['#intro-logo', '#intro-title', '#intro-info', '#intro-buttons'], {
+        opacity: 0,
+        x: "-=20",
         stagger: 1
       })
     }, comp)
