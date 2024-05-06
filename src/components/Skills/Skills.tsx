@@ -10,7 +10,7 @@ export const Skills = () => {
     const programmingLanguages = ['JavaScript', 'Python', 'TypeScript']
     const versionControl = ['GitHub']
     return (
-        <div className={styles.skills}>
+        <div id='skills' className={styles.skills}>
             <div className="container">
                 <div className="row">
                     <div className="col__12">

@@ -90,7 +90,7 @@ export const Projects = () => {
         }
     ]
     return (
-        <div className={styles.projects}>
+        <div id='projects' className={styles.projects}>
             <div className="container">
                 <div className="row">
                     <div className="col__9">

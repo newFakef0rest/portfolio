@@ -18,7 +18,7 @@ export const Education = () => {
         }
     ]
     return (
-        <div className={styles.education}>
+        <div id='education' className={styles.education}>
             <div className="container">
                 <div className="row">
                     <div className="col__9">

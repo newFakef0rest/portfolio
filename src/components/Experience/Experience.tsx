@@ -20,7 +20,7 @@ export const Experience = () => {
         }
     ]
     return (
-        <div className={styles.experience}>
+        <div id='experience' className={styles.experience}>
             <div className="container">
                 <div className="row">
                     <div className="col__12">

@@ -1,3 +1,11 @@
+@import '../../scss/vars';
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+  
 .header {
     &__row {
         justify-content: center;
@@ -10,9 +18,45 @@
         a {
             display: inline-block;
             color: white;
-            font-weight: medium;
+            font-weight: 400;
             font-size: 20px;
             text-transform: capitalize;
+            padding: 10px;
+            background-color: #151515;
+            border-radius: 10px;
+            position: relative;
+            &:hover {
+                transition: all 0.3s;
+                &::before, &::after {
+                    inset: -.2rem;
+                    filter: blur(.5rem);
+                }
+            }
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                inset: 1rem;
+                border-radius: inherit;
+                transition: 0.2s;
+                background: conic-gradient(
+                    from var(--gradient-angle),
+                    $blue,
+                    $yellow,
+                    $red,
+                    $yellow,
+                    $blue
+                );
+                animation: rotation 4s linear infinite;
+            }
+            &::before {
+                filter: blur(-1rem);
+            }
         }
     }
+}
+
+@keyframes rotation {
+    0% { --gradient-angle: 0deg; }
+    100% { --gradient-angle: 360deg; }
 }
