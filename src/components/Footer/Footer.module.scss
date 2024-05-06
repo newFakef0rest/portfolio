@@ -1,5 +1,8 @@
 .footer {
     padding: 103px 0 24px;
+    position: relative;
+    z-index: 10;
+    background-color: #151515;
     &__row {
         justify-content: center;
         span {

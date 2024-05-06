@@ -1,14 +1,13 @@
 import { Education } from "../Education/Education"
 import { Experience } from "../Experience/Experience"
-import { Introduction } from "../Introduction/Introduction"
 import { Languages } from "../Languages/Languages"
 import { Projects } from "../Projects/Projects"
 import { Skills } from "../Skills/Skills"
+import styles from './Main.module.scss';
 
 export const Main = () => {
     return (
-        <main>
-            <Introduction />
+        <main className={styles.main}>
             <Education />
             <Languages />
             <Skills />

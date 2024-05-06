@@ -1,0 +1,18 @@
+.header {
+    &__row {
+        justify-content: center;
+    }
+    &__nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        a {
+            display: inline-block;
+            color: white;
+            font-weight: medium;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+    }
+}
