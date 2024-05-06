@@ -29,7 +29,7 @@ export const Introduction = () => {
                             <div className={styles.introduction__links}>
                                 <li><Link title="LinkedIn" alt="LinkedIn" image={LinkedIn} href="https://www.linkedin.com/in/azizjonmakhamadjonov/"/></li>
                                 <li><Link title="GitHub" alt="GitHub" image={Github} href="https://github.com/newFakef0rest"/></li>
-                                <li><Link title="azizmamadjaprio@gmail.com" alt="Email" image={Email} href="mailto:azizmamadjaprio@gmail.com"/></li>
+                                <li><Link title="Gmail" alt="Email" image={Email} href="mailto:azizmamadjaprio@gmail.com"/></li>
                                 <li><Link title="CV" alt="Resume" image={Resume} href={ResumePdf}/></li>
                             </div>
                         </div>

@@ -9,6 +9,6 @@ type LinkProps = {
 
 export const Link = ({title, image, alt, href} : LinkProps) => {
     return (
-        <a href={href} target='_blank' className={styles.link}><img src={image} alt={alt} />{title}</a>
+        <a href={href} target='_blank' className={styles.link}><img src={image} alt={alt} /><span>{title}</span></a>
     )
 }
