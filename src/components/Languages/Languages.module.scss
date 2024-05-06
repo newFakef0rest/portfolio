@@ -2,8 +2,12 @@
 
 .languages {
     padding-bottom: 70px;
+    &__slider {
+        width: 100%;
+    }
     &__box {
         padding-top: 16px;
+
         li {
             margin-top: 15px;
         }
@@ -13,5 +17,8 @@
         p {
             color: white;
         }
+    }
+    @media (max-width: 768px) {
+        max-width: 500px;       
     }
 }

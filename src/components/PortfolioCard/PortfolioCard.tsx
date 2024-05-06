@@ -26,7 +26,7 @@ export const PortfolioCard = ({card} : PortfolioProps) => {
 
                     </div>
                     <div className={styles.card__image}>
-                        <img src={item.image} alt="" />
+                        <img src={item.image} alt={`${item.title} image`} />
                     </div>
                 </div>
             ))}

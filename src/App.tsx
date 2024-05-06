@@ -34,6 +34,9 @@ function App() {
         delay: 1,
         xPercent: "-100",
         duration: 2
+      }).from(['.video','#intro-logo', '#intro-title', '#intro-info', '#intro-buttons', '.anim__buttons'], {
+        opacity: 0,
+        stagger: 1
       })
     }, comp)
 
@@ -41,7 +44,7 @@ function App() {
   })
 
   return (
-    <div className="app" ref={comp}>
+    <div id='app' className="app" ref={comp}>
       <div id='blackBox' className="test">
         <Lottie lottieRef={anim} id="test" animationData={animationData} />
         <div className="title__box">

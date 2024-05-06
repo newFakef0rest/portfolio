@@ -1,11 +1,12 @@
 @import '../../scss/vars';
+@import '../../scss/mixins';
 
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
-  
+
 .header {
     &__row {
         justify-content: center;
@@ -59,4 +60,13 @@
 @keyframes rotation {
     0% { --gradient-angle: 0deg; }
     100% { --gradient-angle: 360deg; }
+}
+
+@media (max-width: 768px) {
+    .header {
+        a {
+            font-size: 16px;
+            padding: 20px;
+        }
+    }
 }

@@ -15,15 +15,15 @@ export const Languages = () => {
                         <ul className={styles.languages__box}>
                             <li>
                                 <p>Russian - Native</p>
-                                <Slider value={100} aria-label="Default" valueLabelDisplay="auto" />
+                                <Slider className={styles.language__slider} value={100} aria-label="Default" valueLabelDisplay="auto" />
                             </li>
                             <li>
                                 <p>English - Professional Proficiency (C1)</p>
-                                <Slider value={90} aria-label="Default" valueLabelDisplay="auto" />
+                                <Slider className={styles.language__slider} value={90} aria-label="Default" valueLabelDisplay="auto" />
                             </li>
                             <li>
                                 <p>German - Intermediate (B1)</p>
-                                <Slider value={60} aria-label="Default" valueLabelDisplay="auto" />
+                                <Slider className={styles.language__slider} value={60} aria-label="Default" valueLabelDisplay="auto" />
                             </li>
                         </ul>
                     </div>
