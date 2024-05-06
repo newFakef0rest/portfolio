@@ -7,6 +7,54 @@
     color: white;
 }
 
+* path {
+    stroke: white;
+}
+
+.app {
+    position: relative;
+}
+
+.test {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: white;
+    }
+}
+
+.title__box {
+    position: absolute;
+    z-index: 200;
+}
+
+.titles {
+    margin-right: 50px;
+    font-size: 25px;
+}
+
+#title-1 {
+    color: $yellow;
+}
+
+#title-2 {
+    color: $red;
+}
+
+#title-3 {
+    color: $blue;
+}
+
+
+
 body {
     overflow-y: scroll;
     background-color: #151515;
