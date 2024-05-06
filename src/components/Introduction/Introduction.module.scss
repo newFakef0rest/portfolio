@@ -12,19 +12,22 @@
     &__title {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        max-width: 750px;
         h1 {
             font-weight: 600;   
             font-size: 52px;
             color: white;
             margin-right: 18px;
         }
-        span {
-            color: #1F3A8A;
-            padding: 3px 14px;
-            background-color: #BEDBFE;
-            font-weight: 400;
-            border-radius: 10px;
-        }
+    }
+    &__span {
+        color: #1F3A8A;
+        padding: 3px 14px;
+        background-color: #BEDBFE;
+        font-weight: 400;
+        border-radius: 10px;
+        margin-right: 18px;
     }
     &__info {
         display: flex;

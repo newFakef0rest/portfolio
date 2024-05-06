@@ -6,8 +6,14 @@ import Email from '../../images/Email.svg';
 import Resume from '../../images/Resume.svg';
 import ResumePdf from '../../assets/fourth.pdf';
 import { Link } from '../Link/Link';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
+
 
 export const Introduction = () => {
+    const [text] = useTypewriter({
+        words: ['I am Azizjon', 'jestem Azizjon', 'ich bin Azizjon', 'я Азизжон'],
+        loop: true,
+    })
     return (
         <div className={`${styles.introduction}`}>
             <div className="container">
@@ -18,8 +24,8 @@ export const Introduction = () => {
                                 <img src={Logo} alt="Logo" />
                             </div>
                             <div id='intro-title' className={styles.introduction__title}>
-                                <h1>Hey,  I am Azizjon</h1>
-                                <span>Open to work</span>
+                                <h1>Hey, {text} <Cursor /></h1>
+                                <span className={styles.introduction__span}>Open to work</span>
                             </div>
                             <div id='intro-info' className={styles.introduction__info}>
                                 <p className={styles.introduction__color_first}>Motivated and adaptable eager to contribute and learn. &nbsp; </p>
