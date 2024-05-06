@@ -1,0 +1,37 @@
+@import '../../scss/vars';
+
+.card {
+    margin-bottom: 41px;
+    &__title {
+        margin-bottom: 20px;
+        h5 {
+            text-transform: capitalize;
+            font-size: 26px;
+            font-weight: 600;
+            color: $yellow;
+        }
+    }
+    &__info {
+        margin-bottom: 25px;
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+    &__buttons {
+        display: flex;
+        margin-bottom: 33px;
+        li {
+            margin-right: 23px;
+        }
+    }
+    &__image {
+        img {
+            width: 100%;
+            -webkit-box-shadow: 10px 10px 50px 0px rgba(255, 255, 255, 0.1);
+            -moz-box-shadow: 10px 10px 50px 0px rgba(255, 255, 255, 0.1);
+            box-shadow: 10px 10px 50px 0px rgba(255, 255, 255, 0.1);
+        }
+    }
+}

@@ -5,6 +5,7 @@ import Github from '../../images/GitHub.svg';
 import Email from '../../images/Email.svg';
 import Resume from '../../images/Resume.svg';
 import ResumePdf from '../../assets/fourth.pdf';
+import { Link } from '../Link/Link';
 
 export const Introduction = () => {
     return (
@@ -26,10 +27,10 @@ export const Introduction = () => {
                                 <p className={styles.introduction__color_third}> Dedicated of Pixel Perfect web.</p>
                             </div>
                             <div className={styles.introduction__links}>
-                                <li><a href="https://www.linkedin.com/in/azizjonmakhamadjonov/"><img src={LinkedIn} alt="LinkedIn" />LinkedIn</a></li>
-                                <li><a href="https://github.com/newFakef0rest"><img src={Github} alt="GitHub" />GitHub</a></li>
-                                <li><a href="mailto:azizmamadjaprio@gmail.com"><img src={Email} alt="Email" />azizmamadjaprio@gmail.com</a></li>
-                                <li><a href={ResumePdf}><img src={Resume} alt="Resume" />CV</a></li>
+                                <li><Link title="LinkedIn" alt="LinkedIn" image={LinkedIn} href="https://www.linkedin.com/in/azizjonmakhamadjonov/"/></li>
+                                <li><Link title="GitHub" alt="GitHub" image={Github} href="https://github.com/newFakef0rest"/></li>
+                                <li><Link title="azizmamadjaprio@gmail.com" alt="Email" image={Email} href="mailto:azizmamadjaprio@gmail.com"/></li>
+                                <li><Link title="CV" alt="Resume" image={Resume} href={ResumePdf}/></li>
                             </div>
                         </div>
                     </div>
