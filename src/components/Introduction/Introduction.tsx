@@ -6,8 +6,6 @@ import Email from '../../images/Email.svg';
 import Resume from '../../images/Resume.svg';
 import ResumePdf from '../../assets/fourth.pdf';
 import { Link } from '../Link/Link';
-import { useLayoutEffect, useRef } from 'react';
-import gsap from 'gsap';
 
 export const Introduction = () => {
     return (
