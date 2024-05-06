@@ -8,6 +8,7 @@ import LinkedIn from '../../images/LinkedIn.svg';
 import Netlify from '../../images/netlify.svg';
 import Portfolio from '../../images/portfolio.png';
 import ApiTest from '../../images/apitest.png';
+import ObstGe from '../../images/obstge.png';
 
 type TButtons = {
     title: string,
@@ -61,6 +62,28 @@ export const Projects = () => {
             {
                 title: 'Netlify',
                 href: 'https://apitest-cyan.vercel.app/',
+                image: Netlify
+            }
+            ]
+        },
+        {
+            title: 'ObstGe',
+            info: 'Developed an interactive web application using React, TypeScript and Material UI. Designed to be a reflective space for personal and professional growth, with a focus on simplicity and minimalism. More information about this project is in my LinkedIn profile (section "Projects")',
+            image: ObstGe,
+            buttons: [
+            {
+                title: 'GitHub',
+                href: 'https://github.com/newFakef0rest/foodSite',
+                image: GitHub
+            },
+            {
+                title: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/azizjonmakhamadjonov/',
+                image: LinkedIn
+            },
+            {
+                title: 'Netlify',
+                href: 'https://newfakef0rest.github.io/foodSite/',
                 image: Netlify
             }
             ]
