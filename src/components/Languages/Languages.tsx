@@ -5,7 +5,7 @@ import Slider from '@mui/material/Slider';
 
 export const Languages = () => {
     return (
-        <div className={styles.languages}>
+        <div id='languages' className={styles.languages}>
             <div className="container">
                 <div className="row">
                     <div className="col__12">

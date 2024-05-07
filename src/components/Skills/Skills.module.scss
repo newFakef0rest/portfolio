@@ -1,4 +1,6 @@
 .skills {
+    position: relative;
+    z-index: 100;
     @media (max-width: 992px) {
         padding-bottom: 200px;
     }

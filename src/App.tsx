@@ -3,18 +3,22 @@ import { Header } from "./components/Header/Header"
 import { Main } from "./components/Main/Main"
 import Coding from './images/coding.mp4';
 import gsap from 'gsap';
-import { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef} from 'react';
 import Lottie, {LottieRefCurrentProps} from 'lottie-react';
 import animationData from './images/loader.json';
+import { ScrollTrigger } from "gsap/all";
 
 function App() {
   const comp = useRef<HTMLDivElement>(null);
   const anim = useRef<LottieRefCurrentProps>(null);
-
+  
 
   useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger) 
     const ctx = gsap.context(() => {
+
       const t1 = gsap.timeline()
+      const t2 = gsap.timeline()
       t1.from('#test', {
         opacity: 0,
         y: "+=200",
@@ -34,6 +38,8 @@ function App() {
         delay: 1,
         xPercent: "-100",
         duration: 2
+      }).from('body', {
+        overflow: 'hidden'
       }).from(['.video', '.anim__buttons'], {
         opacity: 0,
         y: "-=20",
@@ -43,18 +49,36 @@ function App() {
         x: "-=20",
         stagger: 1
       })
-    }, comp)
+
+      t2.from('.circles', {
+        opacity: 0,
+        duration: 0.4,
+        scrollTrigger: {
+          trigger: "#main",
+          end: 'top top',
+          scrub: true
+        }
+      }).to('#mask', {
+        display: 'none',
+        scrollTrigger: {
+          trigger: "#languages",
+          scrub: true
+        }
+      })
+
+    })
+
 
     return () => ctx.revert()
   })
 
   return (
     <div id='app' className="app" ref={comp}>
-
-      <Header />
+      <Header/>
       <Main />
       <Footer />
       <video className="video" src={Coding} autoPlay loop muted></video>
+
       <div id='blackBox' className="test">
         <Lottie lottieRef={anim} id="test" animationData={animationData} />
         <div className="title__box">

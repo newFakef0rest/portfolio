@@ -9,11 +9,6 @@ export const Line = () => {
     const width = 1000
     const height = 400
 
-    const newLine = document.getElementById('line')
-
-    console.log(newLine?.getBoundingClientRect())
-
-
     
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const resY =  e.clientY - newEl.current!.getBoundingClientRect().y
