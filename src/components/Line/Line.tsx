@@ -9,9 +9,16 @@ export const Line = () => {
     const width = 1000
     const height = 400
 
+    const newLine = document.getElementById('line')
+
+    console.log(newLine?.getBoundingClientRect())
+
+
     
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-        const newPath = `M 0 200 Q ${e.pageX} ${e.pageY - 2300} 980 200`
+        const resY =  e.clientY - newEl.current!.getBoundingClientRect().y
+        const newPath = `M 0 200 Q ${e.clientX} ${resY} 980 200`
+
         // const locationEl = e.pageY - height
 
         gsap.to('svg path', {
