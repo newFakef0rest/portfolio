@@ -29,7 +29,7 @@ export const Projects = () => {
     const card: TProject = [
         {
             title: 'Personal Portfolio',
-            info: 'Developed an interactive web application using React, TypeScript and Material UI. Designed to be a reflective space for personal and professional growth, with a focus on simplicity and minimalism.',
+            info: 'Developed an interactive web application using React, TypeScript and Material UI. Designed it to be a reflective space for personal and professional growth, with a focus on simplicity and minimalism.',
             image: Portfolio,
             buttons: [
             {
@@ -68,7 +68,7 @@ export const Projects = () => {
         },
         {
             title: 'ObstGe',
-            info: 'Developed an interactive web application using React, TypeScript and Material UI. Designed to be a reflective space for personal and professional growth, with a focus on simplicity and minimalism. More information about this project is in my LinkedIn profile (section "Projects")',
+            info: 'Developed an interactive web application using React, TypeScript and Material UI. Designed it to be a reflective space for personal and professional growth, with a focus on simplicity and minimalism. More information about this project is in my LinkedIn profile (section "Projects")',
             image: ObstGe,
             buttons: [
             {
