@@ -1,0 +1,12 @@
+.line {
+    @media (max-width: 992px) {
+        display: none;
+    }
+    &__item {
+        svg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

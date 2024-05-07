@@ -1,3 +1,5 @@
 .skills {
-    padding-bottom: 246px;
+    @media (max-width: 992px) {
+        padding-bottom: 200px;
+    }
 }

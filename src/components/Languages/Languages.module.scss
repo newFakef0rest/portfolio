@@ -19,6 +19,13 @@
         }
     }
     @media (max-width: 768px) {
-        max-width: 500px;       
+        &__box {
+            max-width: 500px;  
+        }
+    }
+    @media (max-width: 567px) {
+        &__box {
+            max-width: 300px;
+        }
     }
 }

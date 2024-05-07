@@ -2,7 +2,7 @@ import styles from './HeaderNav.module.scss';
 
 export const HeaderNav = () => {
     const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id : string) => {
-        let item = document.getElementById(id)
+        const item = document.getElementById(id)
         console.log(item)
         e.preventDefault();
         item && item.scrollIntoView({behavior: "smooth"});

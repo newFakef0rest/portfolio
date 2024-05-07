@@ -50,6 +50,11 @@ function App() {
 
   return (
     <div id='app' className="app" ref={comp}>
+
+      <Header />
+      <Main />
+      <Footer />
+      <video className="video" src={Coding} autoPlay loop muted></video>
       <div id='blackBox' className="test">
         <Lottie lottieRef={anim} id="test" animationData={animationData} />
         <div className="title__box">
@@ -58,10 +63,6 @@ function App() {
           <span className="titles" id='title-3'>Creator</span>
         </div>
       </div>
-      <Header />
-      <Main />
-      <Footer />
-      <video className="video" src={Coding} autoPlay loop muted></video>
     </div>
   )
 }
