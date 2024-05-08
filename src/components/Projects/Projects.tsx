@@ -9,6 +9,10 @@ import Netlify from '../../images/netlify.svg';
 import Portfolio from '../../images/portfolio.png';
 import ApiTest from '../../images/apitest.png';
 import ObstGe from '../../images/obstge.png';
+import Fides from '../../images/fides.png';
+import SmokeOff from '../../images/smokeoff.png';
+import KumushSaroy from '../../images/kumush-saroy.png';
+import Cerera from '../../images/Cerera.png';
 
 type TButtons = {
     title: string,
@@ -85,6 +89,91 @@ export const Projects = () => {
                 title: 'Netlify',
                 href: 'https://newfakef0rest.github.io/foodSite/',
                 image: Netlify
+            }
+            ]
+        },
+        {
+            title: 'Fides',
+            info: 'Developed an interactive web application using HTML, CSS, SCSS, Gulp and Javacscript. Designed it to be a reflective space for personal and professional growth, with a focus on simplicity and minimalism.',
+            image: Fides,
+            buttons: [
+            {
+                title: 'GitHub',
+                href: 'https://github.com/newFakef0rest/fides',
+                image: GitHub
+            },
+            {
+                title: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/azizjonmakhamadjonov/',
+                image: LinkedIn
+            },
+            {
+                title: 'GitHub Pages',
+                href: 'https://newfakef0rest.github.io/fides/',
+                image: Netlify
+            }
+            ]
+        },{
+            title: 'SmokeOff',
+            info: 'Developed an interactive web application using HTML, CSS, SCSS, Gulp, and Javacscript. Designed it to be a reflective space for personal and professional growth, with a focus on simplicity and minimalism.',
+            image: SmokeOff,
+            buttons: [
+            {
+                title: 'GitHub',
+                href: 'https://github.com/newFakef0rest/smokeoff',
+                image: GitHub
+            },
+            {
+                title: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/azizjonmakhamadjonov/',
+                image: LinkedIn
+            },
+            {
+                title: 'GitHub Pages',
+                href: 'https://newfakef0rest.github.io/smokeoff/',
+                image: GitHub
+            }
+            ]
+        },{
+            title: 'Kumush Saroy',
+            info: 'Experience the essence of Tashkent at our hotel-cafés sleek and intuitive website. Seamlessly designed for effortless navigation, discover our enticing offerings, from sumptuous dining options to luxurious accommodations. Immerse yourself in the elegance of our online platform and let your journey through Tashkent begin with just a click',
+            image: KumushSaroy,
+            buttons: [
+            {
+                title: 'GitHub',
+                href: 'https://github.com/newFakef0rest/kumush',
+                image: GitHub
+            },
+            {
+                title: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/azizjonmakhamadjonov/',
+                image: LinkedIn
+            },
+            {
+                title: 'GitHub Pages',
+                href: 'https://newfakef0rest.github.io/kumush/',
+                image: GitHub
+            }
+            ]
+        },{
+            title: 'Cerera',
+            info: 'Cereras website captivates visitors with its interactive JavaScript content, enhanced by SCSS for sleek styling. Featuring multiple pages, it offers a dynamic journey through Cereras world, engaging users with seamless navigation and captivating visuals.',
+            image: Cerera,
+            buttons: [
+            {
+                title: 'GitHub',
+                href: 'https://github.com/newFakef0rest/cerera',
+                image: GitHub
+            },
+            {
+                title: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/azizjonmakhamadjonov/',
+                image: LinkedIn
+            },
+            {
+                title: 'GitHub Pages',
+                href: 'https://newfakef0rest.github.io/cerera/',
+                image: GitHub
             }
             ]
         }
