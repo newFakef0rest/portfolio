@@ -15,6 +15,8 @@ import KumushSaroy from '../../images/kumush-saroy.png';
 import Cerera from '../../images/Cerera.png';
 import Xmedia from '../../images/xmedia.png';
 import Nevotag from '../../images/nevotag.png';
+import Studio from '../../images/studio.png';
+import Nevohub from '../../images/nevohub.png';
 
 type TButtons = {
     title: string,
@@ -199,6 +201,38 @@ export const Projects = () => {
                 href: 'https://nevotag.uz/',
                 image: 'Nevotag'
             }
+            ]
+        },{
+            title: 'Studio',
+            info: '"Studio website" is one of my personal projects built using basic HTML, CSS, and JavaScript. It serves as an online platform showcasing my web design and programming skills, offering visitors a unique user interface, modern design, and interactive features created with JavaScript. The website not only demonstrates my skills but also provides practical experience in developing functional web applications using standard development technologies.',
+            image: Studio,
+            buttons: [
+                {
+                    title: 'GitHub',
+                    href: 'https://github.com/newFakef0rest/studio',
+                    image: GitHub
+                },
+                {
+                    title: 'GitHub Pages',
+                    href: 'https://newfakef0rest.github.io/studio/',
+                    image: GitHub
+                }
+            ]
+        },{
+            title: 'Nevohub',
+            info: 'Nevohub is a subsidiary of Nevotag, focusing on providing a range of social internet services such as website development, social media marketing (SMM), SEO, and more. It operates within the digital realm, offering solutions tailored to enhance online presence and engagement for individuals and businesses alike. With a specialization in various facets of online interaction, Nevohub aims to empower clients to thrive in the dynamic landscape of the internet',
+            image: Nevohub,
+            buttons: [
+                {
+                    title: 'GitHub',
+                    href: 'https://github.com/newFakef0rest/studio',
+                    image: GitHub
+                },
+                {
+                    title: 'GitHub Pages',
+                    href: 'https://newfakef0rest.github.io/studio/',
+                    image: GitHub
+                }
             ]
         }
     ]
