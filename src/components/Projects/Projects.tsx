@@ -13,6 +13,8 @@ import Fides from '../../images/fides.png';
 import SmokeOff from '../../images/smokeoff.png';
 import KumushSaroy from '../../images/kumush-saroy.png';
 import Cerera from '../../images/Cerera.png';
+import Xmedia from '../../images/xmedia.png';
+import Nevotag from '../../images/nevotag.png';
 
 type TButtons = {
     title: string,
@@ -174,6 +176,28 @@ export const Projects = () => {
                 title: 'GitHub Pages',
                 href: 'https://newfakef0rest.github.io/cerera/',
                 image: GitHub
+            }
+            ]
+        },{
+            title: 'Xmedia Group',
+            info: 'The Xmedia-Group website serves as a comprehensive online presence for a firm specializing in website design, flyer creation, and related services. With multiple pages, it offers detailed information about the companys offerings, showcasing their expertise in digital and print media. Visitors can explore their portfolio, learn about their process, and connect with them for their design needs.',
+            image: Xmedia,
+            buttons: [
+            {
+                title: 'Xmedia',
+                href: 'https://xmedia-group.uz/',
+                image: 'XmediaLogo'
+            }
+            ]
+        },{
+            title: 'Nevotag',
+            info: 'The Nevotag landing website is the gateway to a premier programming education center. With a sleek design and intuitive navigation, it offers comprehensive insights into the centers courses, faculty, and unique learning approach, catering to aspiring programmers seeking quality education.',
+            image: Nevotag,
+            buttons: [
+            {
+                title: 'Nevotag',
+                href: 'https://nevotag.uz/',
+                image: 'Nevotag'
             }
             ]
         }
