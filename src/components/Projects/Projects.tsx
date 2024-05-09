@@ -225,12 +225,12 @@ export const Projects = () => {
             buttons: [
                 {
                     title: 'GitHub',
-                    href: 'https://github.com/newFakef0rest/studio',
+                    href: 'https://github.com/newFakef0rest/nevohub',
                     image: GitHub
                 },
                 {
                     title: 'GitHub Pages',
-                    href: 'https://newfakef0rest.github.io/studio/',
+                    href: 'https://newfakef0rest.github.io/nevohub/',
                     image: GitHub
                 }
             ]
